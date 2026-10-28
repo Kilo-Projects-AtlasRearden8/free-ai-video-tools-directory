@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free AI Video Tools Directory — Asdale Dynamics, LLC</title>
+<meta name="description" content="Free and free-tier AI video tools for editing, captioning, thumbnails, and enhancement. No affiliate links. Published by Asdale Dynamics, LLC.">
+<link rel="preload" as="fetch" href="tools.json">
+<style>
+  :root {
+    --ink: #111827;
+    --muted: #6b7280;
+    --bg: #ffffff;
+    --card: #f9fafb;
+    --line: #e5e7eb;
+    --accent: #2563eb;
+    --accent-hover: #1d4ed8;
+    --chip: #eff6ff;
+    --chip-text: #1e40af;
+    --radius: 10px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ink); background: var(--bg); line-height: 1.5;
+  }
+  header {
+    background: var(--card); border-bottom: 1px solid var(--line);
+    padding: 1.25rem 1rem; position: sticky; top: 0; z-index: 10;
+  }
+  .wrap { max-width: 900px; margin: 0 auto; }
+  header h1 { font-size: 1.25rem; font-weight: 700; letter-spacing: -0.01em; }
+  header p { font-size: 0.875rem; color: var(--muted); margin-top: 0.25rem; }
+  main { padding: 2rem 1rem 4rem; }
+  .intro { font-size: 0.95rem; color: var(--muted); margin-bottom: 1.5rem; max-width: 620px; }
+  .intro b { color: var(--ink); }
+  .toolbar { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem; align-items: center; }
+  input[type="search"] {
+    flex: 1 1 220px; min-width: 200px; padding: 0.6rem 0.8rem; border: 1px solid var(--line);
+    border-radius: var(--radius); font-size: 0.95rem; outline: none; background: #fff;
+  }
+  input[type="search"]:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(37,99,235,0.1); }
+  .chips { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-left: auto; }
+  .chip {
+    padding: 0.35rem 0.8rem; border: 1px solid var(--line); border-radius: 999px;
+    background: #fff; font-size: 0.85rem; cursor: pointer; user-select: none;
+    color: var(--muted);
+  }
+  .chip.active, .chip.active-all { background: var(--chip); color: var(--chip-text); border-color: var(--accent); }
+  .chip:hover:not(.active) { border-color: var(--muted); color: var(--ink); }
+  .clear { margin-left: 0.5rem; font-size: 0.85rem; color: var(--accent); text-decoration: none; display: none; }
+  .clear:focus { text-decoration: underline; }
+  .count { font-size: 0.85rem; color: var(--muted); margin-bottom: 0.75rem; }
+  .count b { color: var(--ink); }
+  .grid { display: grid; gap: 1rem; }
+  .card {
+    border: 1px solid var(--line); border-radius: var(--radius); padding: 1rem 1.1rem;
+    background: #fff; display: grid; gap: 0.5rem;
+  }
+  .card-head { display: flex; align-items: baseline; gap: 0.5rem; flex-wrap: wrap; }
+  .card h2 { font-size: 1.1rem; font-weight: 700; letter-spacing: -0.01em; }
+  .cat { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
+    background: var(--chip); color: var(--chip-text); padding: 0.12rem 0.5rem; border-radius: 4px; }
+  .meta { display: flex; gap: 0.75rem; flex-wrap: wrap; font-size: 0.85rem; color: var(--muted); }
+  .meta b { color: var(--ink); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; }
+  .steps { margin-top: 0.25rem; font-size: 0.92rem; color: #374151; }
+  .steps b { color: var(--ink); }
+  .steps ol { margin: 0.25rem 0 0 1.1rem; padding: 0; }
+  .steps li { margin-bottom: 0.35rem; }
+  .link { margin-top: 0.4rem; }
+  .link a { display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.9rem; font-weight: 600;
+    color: var(--accent); text-decoration: none; }
+  .link a:hover { color: var(--accent-hover); text-decoration: underline; }
+  .empty { text-align: center; padding: 3rem 1rem; color: var(--muted); font-size: 1rem; }
+  footer { border-top: 1px solid var(--line); padding: 1.5rem 1rem; font-size: 0.85rem; color: var(--muted); }
+  footer a { color: var(--accent); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+  @media (max-width: 520px) { .chips { margin-left: 0; order: 3; width: 100%; justify-content: center; margin-top: 0.5rem; }
+    .toolbar { flex-direction: column; align-items: stretch; }
+    .clear { margin-left: 0; order: 4; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Free AI Video Tools Directory</h1>
+    <p>Free and free-tier AI video tools for editing, captioning, thumbnails, and enhancement &mdash; no affiliate links. Published by <b>Asdale Dynamics, LLC</b>.</p>
+  </div>
+</header>
+<main class="wrap">
+  <div class="intro">Pick a tool, follow the steps, and publish your first video. Every link goes to the tool&rsquo;s official site. Costs and features change &mdash; check each site before relying on a free tier.</div>
+  <div class="toolbar">
+    <input type="search" id="search" placeholder="Search tools&hellip;" aria-label="Search tools">
+    <a href="#" id="clear" class="clear">Clear</a>
+    <div class="chips" id="chips"></div>
+  </div>
+  <div class="count" id="count"></div>
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty" style="display:none;">No tools match your search.</div>
+</main>
+<footer class="wrap">
+  Built and published by <b>Asdale Dynamics, LLC</b> (Indiana, formed October 2026) &mdash; beginner-friendly AI education, books, and guides. Founder Dylan Asdale is a registered nurse turned AI author. More at <a href="https://dylanasdale.github.io" target="_blank" rel="noopener">dylanasdale.github.io</a>.<br>
+  Source data: <a href="tools.md" target="_blank">tools.md</a> &middot; <a href="https://github.com/dylanasdale/free-ai-video-tools-directory" target="_blank" rel="noopener">GitHub repo</a> &middot; <a href="LICENSE" target="_blank">MIT License</a> &mdash; Copyright (c) 2026 Asdale Dynamics, LLC
+</footer>
+
+<script>
+const DATA_URL = "tools.json";
+let tools = [];
+let filters = { q: "", category: null };
+
+async function load() {
+  let data;
+  try {
+    const res = await fetch(DATA_URL);
+    if (!res.ok) throw new Error("fetch failed");
+    data = await res.json();
+  } catch (_) {
+    data = JSON.parse(document.getElementById("fallback").textContent);
+  }
+  tools = data.tools || [];
+  renderChips();
+  render();
+}
+
+function renderChips() {
+  const cats = [...new Set(tools.map(t => t.category))];
+  const container = document.getElementById("chips");
+  container.innerHTML = `
+    <span class="chip active-all" data-cat="">All</span>
+    ${cats.map(c => `<span class="chip" data-cat="${c}">${c}</span>`).join("")}
+  `;
+  container.querySelectorAll(".chip").forEach(el => {
+    el.addEventListener("click", () => {
+      container.querySelectorAll(".chip").forEach(x => x.classList.remove("active", "active-all"));
+      el.classList.add("active-all", "active");
+      filters.category = el.dataset.cat || null;
+      render();
+    });
+  });
+}
+
+function matches(tool) {
+  const q = filters.q.toLowerCase();
+  const haystack = (tool.name + " " + tool.category + " " + tool.cost + " " + tool.platform + " " + tool.steps.join(" ")).toLowerCase();
+  const byCat = filters.category ? tool.category === filters.category : true;
+  return byCat && (!q || haystack.includes(q));
+}
+
+function render() {
+  const grid = document.getElementById("grid");
+  const count = document.getElementById("count");
+  const empty = document.getElementById("empty");
+  const clear = document.getElementById("clear");
+  const search = document.getElementById("search");
+
+  const filtered = tools.filter(matches);
+  count.innerHTML = `<b>${filtered.length}</b> tool${filtered.length !== 1 ? "s" : ""} ${filters.q ? `matching "${filters.q}"` : "available"}`;
+  clear.style.display = filters.q ? "inline" : "none";
+  empty.style.display = filtered.length ? "none" : "block";
+  grid.innerHTML = "";
+
+  filtered.forEach(tool => {
+    const card = document.createElement("article");
+    card.className = "card";
+    card.innerHTML = `
+      <div class="card-head"><h2>${escapeHtml(tool.name)}</h2><span class="cat">${escapeHtml(tool.category)}</span></div>
+      <div class="meta"><b>Cost:</b> ${escapeHtml(tool.cost)} <b>Platform:</b> ${escapeHtml(tool.platform)}</div>
+      <div class="steps"><b>Steps:</b> <ol>${tool.steps.map(s => `<li>${escapeHtml(s)}</li>`).join("")}</ol></div>
+      <div class="link"><a href="${escapeHtml(tool.link)}" target="_blank" rel="noopener">Official site &rarr;</a></div>
+    `;
+    grid.appendChild(card);
+  });
+}
+
+function escapeHtml(s) {
+  const div = document.createElement("div");
+  div.textContent = s;
+  return div.innerHTML;
+}
+
+document.getElementById("search").addEventListener("input", (e) => {
+  filters.q = e.target.value;
+  render();
+});
+document.getElementById("clear").addEventListener("click", (e) => {
+  e.preventDefault();
+  document.getElementById("search").value = "";
+  filters.q = "";
+  render();
+});
+
+load();
+</script>
+<script id="fallback" type="application/json">
+{"tools":[{"name":"DaVinci Resolve","category":"Editing","cost":"Free (Studio version is paid)","platform":"Windows, macOS, Linux","steps":["Download the free version from the official site and install it.","Open DaVinci Resolve, create a new project, and import clips into the Media Pool.","Drag clips to the timeline on the Edit page; trim, add transitions and titles.","Use the Color page for AI-powered color matching and correction.","Deliver (export) your video as MP4."],"link":"https://www.blackmagicdesign.com/products/davinciresolve"},{"name":"CapCut","category":"Editing","cost":"Free tier (Pro is paid)","platform":"Windows, macOS, iOS, Android, Web","steps":["Install CapCut (desktop or mobile) or open the web editor.","Import your video and drag it onto the timeline.","Use Auto Cut for AI highlight assembly, or Auto Captions on the Text tab.","Apply free effects, transitions, and music.","Export and download your video."],"link":"https://www.capcut.com"},{"name":"Clipchamp","category":"Editing","cost":"Free tier (Premium is paid)","platform":"Windows, macOS, Web","steps":["Open clipchamp.com or the Clipchamp app and sign in with a Microsoft account.","Create a video and import your media.","Use AI features such as auto compose, text-to-speech, and speaker coach.","Edit on the timeline and add filters and transitions.","Export in 1080p (free tier) and download."],"link":"https://clipchamp.com"},{"name":"Canva","category":"Editing","cost":"Free tier (Pro is paid)","platform":"Web, iOS, Android, Windows, macOS","steps":["Go to canva.com, search \"video\", and pick a template or start blank.","Upload clips or use Canva's free stock video library.","Use Magic Edit and AI tools to adjust clips; add text, animation, and music.","Download as MP4 (some premium assets require Pro)."],"link":"https://www.canva.com"},{"name":"OpusClip","category":"Editing","cost":"Free tier (paid plans for more credits)","platform":"Web","steps":["Go to opusclip.com and paste a video URL or upload a file.","Choose a caption style and preferred clip length.","Let AI generate short captioned clips from the long video.","Review the transcript-based timeline, edit, and download."],"link":"https://www.opusclip.com"},{"name":"Whisper","category":"Captioning","cost":"Free, open source","platform":"Local: Windows, macOS, Linux (Python)","steps":["Install Python if you don't have it.","Run: pip install openai-whisper (ffmpeg must also be installed).","Run: whisper your-video.mp4 --model base","Whisper writes subtitle files (SRT, VTT, TXT) into the current folder."],"link":"https://github.com/openai/whisper"},{"name":"VEED.io","category":"Captioning","cost":"Free tier (exports watermarked)","platform":"Web, iOS","steps":["Go to veed.io and upload your video to the editor.","Open the Subtitles tab and choose Auto Subtitles.","Edit caption text and timing, then set fonts and colors.","Export and download (free tier includes a watermark)."],"link":"https://www.veed.io"},{"name":"Kapwing","category":"Captioning","cost":"Free tier (exports watermarked)","platform":"Web","steps":["Go to kapwing.com and start a new project with your video.","Open Subtitles and choose Auto-generate.","Review the AI transcript, fix errors, and set the style.","Export and download (free tier is watermarked)."],"link":"https://www.kapwing.com"},{"name":"Submagic","category":"Captioning","cost":"Free tier (limited monthly exports)","platform":"Web, iOS, Android","steps":["Go to submagic.co and upload your video.","Select the language and a caption template.","AI generates dynamic captions with emojis and highlighted keywords.","Download the captioned video (free tier limits monthly exports)."],"link":"https://submagic.co"},{"name":"Adobe Express","category":"Thumbnails","cost":"Free tier (Premium is paid)","platform":"Web, iOS, Android","steps":["Go to adobe.com/express and open the thumbnail maker.","Pick a YouTube thumbnail template or start from scratch.","Upload a video frame or image; add AI text effects and graphics.","Download as PNG or JPG."],"link":"https://www.adobe.com/express"},{"name":"Canva","category":"Thumbnails","cost":"Free tier (Pro is paid)","platform":"Web, iOS, Android, Windows, macOS","steps":["Go to canva.com and search \"YouTube thumbnail\"; pick a template.","Upload your image and use AI thumbnail tools.","Add text, stickers, and effects.","Download your thumbnail."],"link":"https://www.canva.com"},{"name":"Fotor","category":"Thumbnails","cost":"Free tier (Pro is paid)","platform":"Web, iOS, Android","steps":["Go to fotor.com and open the YouTube thumbnail creator.","Choose a template and upload your image.","Use AI enhancement tools; add text, stickers, and effects.","Download your thumbnail."],"link":"https://www.fotor.com"},{"name":"Simplified","category":"Thumbnails","cost":"Free tier (paid plans for more)","platform":"Web","steps":["Go to simplified.com and open the AI thumbnail generator.","Describe your video topic and choose a style.","Generate thumbnail options and edit text, colors, and images.","Download the design."],"link":"https://simplified.com"},{"name":"Media.io","category":"Enhancement","cost":"Free tier (watermarked)","platform":"Web","steps":["Go to media.io and open the online video enhancer.","Upload your video and choose enhancement options.","Process the video in your browser.","Download the enhanced result (free tier is watermarked)."],"link":"https://www.media.io"},{"name":"CapCut","category":"Enhancement","cost":"Free tier (Pro is paid)","platform":"Windows, macOS, iOS, Android, Web","steps":["Open CapCut and import your video.","Apply the AI video upscaler/enhancer to your clip.","Adjust brightness, contrast, and color as needed.","Export and download the enhanced video."],"link":"https://www.capcut.com"},{"name":"VEED.io","category":"Enhancement","cost":"Free tier (watermarked)","platform":"Web, iOS","steps":["Go to veed.io and upload your video.","Open the video enhancer and adjust resolution, color, and noise.","Preview the enhanced result.","Export and download (free tier includes a watermark)."],"link":"https://www.veed.io"}]}
+</script>
+</body>
+</html>

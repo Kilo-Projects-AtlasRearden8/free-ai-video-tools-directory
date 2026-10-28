@@ -1,0 +1,215 @@
+{
+  "tools": [
+    {
+      "name": "DaVinci Resolve",
+      "category": "Editing",
+      "cost": "Free (Studio version is paid)",
+      "platform": "Windows, macOS, Linux",
+      "steps": [
+        "Download the free version from the official site and install it.",
+        "Open DaVinci Resolve, create a new project, and import clips into the Media Pool.",
+        "Drag clips to the timeline on the Edit page; trim, add transitions and titles.",
+        "Use the Color page for AI-powered color matching and correction.",
+        "Deliver (export) your video as MP4."
+      ],
+      "link": "https://www.blackmagicdesign.com/products/davinciresolve"
+    },
+    {
+      "name": "CapCut",
+      "category": "Editing",
+      "cost": "Free tier (Pro is paid)",
+      "platform": "Windows, macOS, iOS, Android, Web",
+      "steps": [
+        "Install CapCut (desktop or mobile) or open the web editor.",
+        "Import your video and drag it onto the timeline.",
+        "Use Auto Cut for AI highlight assembly, or Auto Captions on the Text tab.",
+        "Apply free effects, transitions, and music.",
+        "Export and download your video."
+      ],
+      "link": "https://www.capcut.com"
+    },
+    {
+      "name": "Clipchamp",
+      "category": "Editing",
+      "cost": "Free tier (Premium is paid)",
+      "platform": "Windows, macOS, Web",
+      "steps": [
+        "Open clipchamp.com or the Clipchamp app and sign in with a Microsoft account.",
+        "Create a video and import your media.",
+        "Use AI features such as auto compose, text-to-speech, and speaker coach.",
+        "Edit on the timeline and add filters and transitions.",
+        "Export in 1080p (free tier) and download."
+      ],
+      "link": "https://clipchamp.com"
+    },
+    {
+      "name": "Canva",
+      "category": "Editing",
+      "cost": "Free tier (Pro is paid)",
+      "platform": "Web, iOS, Android, Windows, macOS",
+      "steps": [
+        "Go to canva.com, search \"video\", and pick a template or start blank.",
+        "Upload clips or use Canva's free stock video library.",
+        "Use Magic Edit and AI tools to adjust clips; add text, animation, and music.",
+        "Download as MP4 (some premium assets require Pro)."
+      ],
+      "link": "https://www.canva.com"
+    },
+    {
+      "name": "OpusClip",
+      "category": "Editing",
+      "cost": "Free tier (paid plans for more credits)",
+      "platform": "Web",
+      "steps": [
+        "Go to opusclip.com and paste a video URL or upload a file.",
+        "Choose a caption style and preferred clip length.",
+        "Let AI generate short captioned clips from the long video.",
+        "Review the transcript-based timeline, edit, and download."
+      ],
+      "link": "https://www.opusclip.com"
+    },
+    {
+      "name": "Whisper",
+      "category": "Captioning",
+      "cost": "Free, open source",
+      "platform": "Local: Windows, macOS, Linux (Python)",
+      "steps": [
+        "Install Python if you don't have it.",
+        "Run: pip install openai-whisper (ffmpeg must also be installed).",
+        "Run: whisper your-video.mp4 --model base",
+        "Whisper writes subtitle files (SRT, VTT, TXT) into the current folder."
+      ],
+      "link": "https://github.com/openai/whisper"
+    },
+    {
+      "name": "VEED.io",
+      "category": "Captioning",
+      "cost": "Free tier (exports watermarked)",
+      "platform": "Web, iOS",
+      "steps": [
+        "Go to veed.io and upload your video to the editor.",
+        "Open the Subtitles tab and choose Auto Subtitles.",
+        "Edit caption text and timing, then set fonts and colors.",
+        "Export and download (free tier includes a watermark)."
+      ],
+      "link": "https://www.veed.io"
+    },
+    {
+      "name": "Kapwing",
+      "category": "Captioning",
+      "cost": "Free tier (exports watermarked)",
+      "platform": "Web",
+      "steps": [
+        "Go to kapwing.com and start a new project with your video.",
+        "Open Subtitles and choose Auto-generate.",
+        "Review the AI transcript, fix errors, and set the style.",
+        "Export and download (free tier is watermarked)."
+      ],
+      "link": "https://www.kapwing.com"
+    },
+    {
+      "name": "Submagic",
+      "category": "Captioning",
+      "cost": "Free tier (limited monthly exports)",
+      "platform": "Web, iOS, Android",
+      "steps": [
+        "Go to submagic.co and upload your video.",
+        "Select the language and a caption template.",
+        "AI generates dynamic captions with emojis and highlighted keywords.",
+        "Download the captioned video (free tier limits monthly exports)."
+      ],
+      "link": "https://submagic.co"
+    },
+    {
+      "name": "Adobe Express",
+      "category": "Thumbnails",
+      "cost": "Free tier (Premium is paid)",
+      "platform": "Web, iOS, Android",
+      "steps": [
+        "Go to adobe.com/express and open the thumbnail maker.",
+        "Pick a YouTube thumbnail template or start from scratch.",
+        "Upload a video frame or image; add AI text effects and graphics.",
+        "Download as PNG or JPG."
+      ],
+      "link": "https://www.adobe.com/express"
+    },
+    {
+      "name": "Canva",
+      "category": "Thumbnails",
+      "cost": "Free tier (Pro is paid)",
+      "platform": "Web, iOS, Android, Windows, macOS",
+      "steps": [
+        "Go to canva.com and search \"YouTube thumbnail\"; pick a template.",
+        "Upload your image and use AI thumbnail tools.",
+        "Add text, stickers, and effects.",
+        "Download your thumbnail."
+      ],
+      "link": "https://www.canva.com"
+    },
+    {
+      "name": "Fotor",
+      "category": "Thumbnails",
+      "cost": "Free tier (Pro is paid)",
+      "platform": "Web, iOS, Android",
+      "steps": [
+        "Go to fotor.com and open the YouTube thumbnail creator.",
+        "Choose a template and upload your image.",
+        "Use AI enhancement tools; add text, stickers, and effects.",
+        "Download your thumbnail."
+      ],
+      "link": "https://www.fotor.com"
+    },
+    {
+      "name": "Simplified",
+      "category": "Thumbnails",
+      "cost": "Free tier (paid plans for more)",
+      "platform": "Web",
+      "steps": [
+        "Go to simplified.com and open the AI thumbnail generator.",
+        "Describe your video topic and choose a style.",
+        "Generate thumbnail options and edit text, colors, and images.",
+        "Download the design."
+      ],
+      "link": "https://simplified.com"
+    },
+    {
+      "name": "Media.io",
+      "category": "Enhancement",
+      "cost": "Free tier (watermarked)",
+      "platform": "Web",
+      "steps": [
+        "Go to media.io and open the online video enhancer.",
+        "Upload your video and choose enhancement options.",
+        "Process the video in your browser.",
+        "Download the enhanced result (free tier is watermarked)."
+      ],
+      "link": "https://www.media.io"
+    },
+    {
+      "name": "CapCut",
+      "category": "Enhancement",
+      "cost": "Free tier (Pro is paid)",
+      "platform": "Windows, macOS, iOS, Android, Web",
+      "steps": [
+        "Open CapCut and import your video.",
+        "Apply the AI video upscaler/enhancer to your clip.",
+        "Adjust brightness, contrast, and color as needed.",
+        "Export and download the enhanced video."
+      ],
+      "link": "https://www.capcut.com"
+    },
+    {
+      "name": "VEED.io",
+      "category": "Enhancement",
+      "cost": "Free tier (watermarked)",
+      "platform": "Web, iOS",
+      "steps": [
+        "Go to veed.io and upload your video.",
+        "Open the video enhancer and adjust resolution, color, and noise.",
+        "Preview the enhanced result.",
+        "Export and download (free tier includes a watermark)."
+      ],
+      "link": "https://www.veed.io"
+    }
+  ]
+}
